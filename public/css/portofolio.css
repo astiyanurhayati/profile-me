@@ -1,0 +1,112 @@
+.portofolio {
+    padding-bottom: 100px;
+}
+
+.projek .foto-projek a img {
+    width: 400px;
+    border-radius: 3px;
+    z-index: 4;
+}
+.projek {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    margin: 0 10%;
+}
+.judul h1 {
+    padding-top: 150px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.desk {
+    width: 500px;
+    z-index: 3;
+}
+.desk p {
+    line-height: 24px;
+}
+.desk h3 {
+    margin-bottom: 10px;
+}
+.container .dua,
+.container .empat {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+}
+.container .tiga {
+    margin-top: 50px;
+}
+
+.properti .satu img {
+    z-index: 1;
+}
+.properti .satu {
+    position: absolute;
+
+    top: 20%;
+    width: 100px;
+}
+.properti .dua {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 300px;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+.properti .tiga {
+    position: absolute;
+    top: 100%;
+    left: 10%;
+}
+
+.properti .empat {
+    position: absolute;
+    width: 150px;
+    bottom: -50%;
+    top: 189%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .projek {
+        flex-wrap: wrap;
+    }
+    .properti .empat {
+        top: 261%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projek {
+        flex-direction: column;
+    }
+    .container .dua,
+    .container .empat {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .projek .foto-projek a img {
+        width: 300px;
+    }
+    .desk {
+        width: 400px;
+        z-index: 3;
+        padding: 0 30px;
+    }
+    .properti .satu {
+        width: 76px;
+    }
+    .properti .dua {
+        width: 165px;
+    }
+    .properti .empat {
+        position: absolute;
+        width: 110px;
+        top: 202%;
+    }
+}
